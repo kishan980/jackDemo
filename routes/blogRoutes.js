@@ -38,7 +38,7 @@ let setRouter = (app) =>{
  *  
  */
     // app.get(baseUrl+"/viewById/:blogId",  middleware.examplemiddleware,blogController.getViewById);
-    app.get(baseUrl+"/viewById/:blogId", blogController.getViewById);
+    app.get(baseUrl+"/:blogId/viewById", blogController.getViewById);
 /**
  * @swagger
  * /api/v10/blog/viewById/{blogId}:
